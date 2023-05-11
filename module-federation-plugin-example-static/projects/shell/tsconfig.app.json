@@ -1,0 +1,123 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "types": [],
+    "target": "es2020",
+    "paths": {
+      "shared-lib": [
+        "projects/shared-lib/src/public-api.ts"
+      ],
+      "my-lib": [
+        "dist/my-lib"
+      ],
+      "auth-lib": [
+        "projects/auth-lib/src/public-api.ts"
+      ],
+      "shared-module/*": [
+        "app/shared/*"
+      ],
+      "networking/*": ["app/networking/*"],
+      "apilib/dto": ["../projects/apilib/dto/src"],
+      "apilib/customValidation": ["../projects/apilib/customValidation/src"],
+      "apilib/enum": ["../projects/apilib/enum/src"],
+      "apilib/payload": ["../projects/apilib/payload/src"],
+      "apilib/policy-resource-paths": ["../projects/apilib/policy-resource-paths/src"],
+      "apilib/routine": ["../projects/apilib/routine/src"],
+      "apilib/validate": ["../projects/apilib/validate/src"],
+      "apilib/propertyRanges": ["../projects/apilib/propertyRanges/src"],
+      "apilib": ["../projects/apilib/src/public-api.ts"],
+      "k8-generated-sources/*": ["app/k8-platform/k8-platform-api/*"],
+      "mcapp/*": ["../projects/mcapp/src/app/*"],
+      "domains/*": ["app/domains/*"],
+      "store/*": [ "app/store/*" ],
+      "firewall/*": [ "app/firewall/*"],
+      "groups/*": [ "app/groups/*"],
+      "workflows/*": [ "app/enforcement-point-workflows/*"],
+      "@angular/*": [ "../node_modules/@angular/*" ],
+      "nsx-tour": [
+        "../projects/nsx-tour/src/public-api.ts"
+      ],
+      "plugin-sdk/client": [
+        "../projects/plugin-sdk/client/src/lib/index.ts"
+      ],
+      "plugin-sdk/server": [
+        "../projects/plugin-sdk/server/src/lib/index.ts"
+      ],
+      "plugin-sdk/common":[
+        "../projects/plugin-sdk/common/src/public-api.ts"
+      ],
+      "fw-common-lib": [
+        "../projects/fw-common-lib/src/public-api.ts"
+      ],
+      "sharedlib/src/lib/common": [
+        "../projects/sharedlib/src/lib/common/public-api.ts"
+      ],
+      "sharedlib/src/lib/components": [
+        "../projects/sharedlib/src/lib/components/public-api.ts"
+      ],
+      "sharedlib/src/lib/directives": [
+        "../projects/sharedlib/src/lib/directives/public-api.ts"
+      ],
+      "sharedlib/src/lib/modules": [
+        "../projects/sharedlib/src/lib/modules/public-api.ts"
+      ],
+      "sharedlib/src/lib/pipe": [
+        "../projects/sharedlib/src/lib/pipe/public-api.ts"
+      ],
+      "sharedlib/src/lib/services": [
+        "../projects/sharedlib/src/lib/services/public-api.ts"
+      ],
+      "sharedlib": [
+        "../projects/sharedlib/src/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/components": [
+        "../projects/policy-sharedlib/src/lib/components/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/dialogs": [
+        "../projects/policy-sharedlib/src/lib/dialogs/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/charts": [
+        "../projects/policy-sharedlib/src/lib/charts/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/directives": [
+        "../projects/policy-sharedlib/src/lib/directives/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/modules": [
+        "../projects/policy-sharedlib/src/lib/modules/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/pipes": [
+        "../projects/policy-sharedlib/src/lib/pipes/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/policy-a11y": [
+        "../projects/policy-sharedlib/src/lib/policy-a11y/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/services": [
+        "../projects/policy-sharedlib/src/lib/services/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/support": [
+        "../projects/policy-sharedlib/src/lib/support/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/sharedlib-module": [
+        "../projects/policy-sharedlib/src/lib/sharedlib-module/public-api.ts"
+      ],
+      "policy-sharedlib": [
+        "../projects/policy-sharedlib/src/public-api.ts"
+      ]
+    }
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "./plugin-sdk/demo-app/",
+    "./src/app/vhcapps/",
+    "**/*.worker.ts"
+  ],
+}

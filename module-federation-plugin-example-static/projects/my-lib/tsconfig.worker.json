@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "lib": ["es2021", "dom", "dom.iterable", "ScriptHost", "WebWorker"],
+    "module": "es2020",
+    "target": "es2021",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*.worker.ts"
+  ]
+}

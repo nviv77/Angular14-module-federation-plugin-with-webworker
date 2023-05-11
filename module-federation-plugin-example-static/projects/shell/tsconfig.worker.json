@@ -1,0 +1,31 @@
+{ 
+  "compilerOptions": {
+    "noEmit": false,
+    "lib": ["es2021", "dom", "dom.iterable", "ScriptHost", "WebWorker"],
+    "module": "es2020",
+    "target": "es2021",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "my-lib": [
+        "../../dist/my-lib"
+      ]
+    },
+    "typeRoots": [
+      "../../node_modules/@types",
+      "../../node_modules/typings"
+    ],
+  },
+  "include": [
+    "src/**/*.worker.ts",
+    "../my-lib/**/*.worker.ts"
+  ]
+}

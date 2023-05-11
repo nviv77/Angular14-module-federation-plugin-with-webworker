@@ -1,0 +1,149 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strictFunctionTypes": false,
+    "skipLibCheck": true,
+    "target": "es2020",
+    "forceConsistentCasingInFileNames": false,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "my-lib": [
+        "dist/my-lib"
+      ],
+      "shared-lib": [
+        "projects/shared-lib/src/public-api.ts"
+      ],
+      "auth-lib": [
+        "projects/auth-lib/src/public-api.ts"
+      ],
+      "lodash/*": [
+        "node_modules/@types/lodash/*"
+      ],
+      "apilib/customValidation": [
+        "projects/apilib/customValidation/src/index.ts"
+      ],
+      "apilib/enum": [
+        "projects/apilib/enum/src/public-api.ts"
+      ],
+      "apilib/payload": [
+        "projects/apilib/payload/src/public-api.ts"
+      ],
+      "apilib/policy-resource-paths": [
+        "projects/apilib/policy-resource-paths/src"
+      ],
+      "apilib/routine": [
+        "projects/apilib/routine/src"
+      ],
+      "apilib/dto": [
+        "projects/apilib/dto/src/public-api.ts"
+      ],
+      "apilib/propertyRanges": ["projects/apilib/propertyRanges/src"],
+      "apilib/validate": [
+        "projects/apilib/validate/src"
+      ],
+      "apilib": ["projects/apilib/src/public-api.ts"],
+      "nsx-tour": [
+        "projects/nsx-tour/src/public-api.ts"
+      ],
+  
+      "plugin-sdk/client": [
+        "projects/plugin-sdk/client/src/lib/index.ts"
+      ],
+      "plugin-sdk/server": [
+        "projects/plugin-sdk/server/src/lib/index.ts"
+      ],
+      "plugin-sdk/common":[
+        "projects/plugin-sdk/common/src/lib/index.ts"
+      ],
+      "sharedlib/src/lib/common": [
+        "projects/sharedlib/src/lib/common/public-api.ts"
+      ],
+      "sharedlib/src/lib/components": [
+        "projects/sharedlib/src/lib/components/public-api.ts"
+      ],
+      "sharedlib/src/lib/directives": [
+        "projects/sharedlib/src/lib/directives/public-api.ts"
+      ],
+      "sharedlib/src/lib/modules": [
+        "projects/sharedlib/src/lib/modules/public-api.ts"
+      ],
+      "sharedlib/src/lib/pipe": [
+        "projects/sharedlib/src/lib/pipe/public-api.ts"
+      ],
+      "sharedlib/src/lib/services": [
+        "projects/sharedlib/src/lib/services/public-api.ts"
+      ],
+      "sharedlib": [
+        "projects/sharedlib/src/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/components": [
+        "projects/policy-sharedlib/src/lib/components/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/dialogs": [
+        "projects/policy-sharedlib/src/lib/dialogs/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/charts": [
+        "projects/policy-sharedlib/src/lib/charts/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/directives": [
+        "projects/policy-sharedlib/src/lib/directives/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/modules": [
+        "projects/policy-sharedlib/src/lib/modules/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/pipes": [
+        "projects/policy-sharedlib/src/lib/pipes/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/policy-a11y": [
+        "projects/policy-sharedlib/src/lib/policy-a11y/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/services": [
+        "projects/policy-sharedlib/src/lib/services/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/support": [
+        "projects/policy-sharedlib/src/lib/support/public-api.ts"
+      ],
+      "policy-sharedlib/src/lib/sharedlib-module": [
+        "projects/policy-sharedlib/src/lib/sharedlib-module/public-api.ts"
+      ],
+      "policy-sharedlib": [
+        "projects/policy-sharedlib/src/public-api.ts"
+      ],
+      "fw-common-lib": [
+        "projects/fw-common-lib/src/public-api.ts"
+      ],
+      "mcapp/*": [
+        "pojects/mcapp/src/app/*"
+      ],
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "./src/typings"
+    ],
+    "lib": [
+      "es2020",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "es2020",
+    "baseUrl": "./",
+    "strict": true
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "strictMetadataEmit": false,
+    "strict": false
+  }
+}
